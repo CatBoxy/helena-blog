@@ -1,10 +1,10 @@
 import Header from '../../Header/Header';
-import { Layout } from './styles';
+import Layout from '../../Layout/Layout';
 import Hero from '../../Hero/Hero';
 import Body from '../../Body/Body';
 import Footer from '../../Footer/Footer';
 
-const Home: React.FC = () => {
+const Home = () => {
   return (
     <>
       <Layout>
@@ -14,7 +14,7 @@ const Home: React.FC = () => {
       <Layout bgColor="white">
         <Body />
       </Layout>
-      <Layout bgColor="black">
+      <Layout bgColor="black" footer={true}>
         <Footer />
       </Layout>
     </>
