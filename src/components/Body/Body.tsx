@@ -1,8 +1,10 @@
+import { Title } from './styles';
+
 const Body = () => {
   return (
     <>
       <div>
-        <h2>Body</h2>
+        <Title>Body</Title>
       </div>
     </>
   );
