@@ -11,7 +11,7 @@ const Home = () => {
         <Header />
         <Hero />
       </Layout>
-      <Layout bgColor="white">
+      <Layout bgColor="white" body={true}>
         <Body />
       </Layout>
       <Layout bgColor="black" footer={true}>

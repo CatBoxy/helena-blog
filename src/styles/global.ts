@@ -25,6 +25,10 @@ const globalStyle = createGlobalStyle`
     background-color: transparent;
     border: none;
   }
+  
+  ul {
+    list-style-type: none;
+  }
 `;
 
 export default globalStyle;
