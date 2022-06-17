@@ -3,14 +3,15 @@ import { MainWrapper } from './styles';
 
 interface LayoutProps {
   bgColor?: string;
-  footer?: boolean;
+  height?: string;
   body?: boolean;
+  padding?: string;
   children: ReactNode;
 }
 
-const Layout: React.FC<LayoutProps> = ({ body, footer, bgColor, children }) => {
+const Layout: React.FC<LayoutProps> = ({ body, height, bgColor, children, padding }) => {
   return (
-    <MainWrapper bgColor={bgColor} footer={footer} body={body}>
+    <MainWrapper bgColor={bgColor} height={height} body={body} padding={padding}>
       {children}
     </MainWrapper>
   );

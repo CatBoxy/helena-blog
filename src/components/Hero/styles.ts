@@ -9,6 +9,7 @@ export const Container = styled.div`
 
   .title {
     margin-bottom: 16px;
+    font-size: 2em;
   }
 
   .scrollBtn {

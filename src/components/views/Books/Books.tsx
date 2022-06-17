@@ -1,20 +1,20 @@
 import Header from '../../Header/Header';
 import Layout from '../../Layout/Layout';
 import SearchBar from '../../SearchBar/SearchBar';
-import Body from '../../Body/Body';
+import Cards from '../../Cards/Cards';
 import Footer from '../../Footer/Footer';
 
 const Books = () => {
     return (
         <>
-            <Layout>
+            <Layout height={'200px'}>
                 <Header />
                 <SearchBar />
             </Layout>
             <Layout bgColor="white" body={true}>
-                <Body />
+                <Cards />
             </Layout>
-            <Layout bgColor="black" footer={true}>
+            <Layout bgColor="black" height={'100px'} padding={'0'}>
                 <Footer />
             </Layout>
         </>

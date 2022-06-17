@@ -14,7 +14,7 @@ const Home = () => {
       <Layout bgColor="white" body={true}>
         <Body />
       </Layout>
-      <Layout bgColor="black" footer={true}>
+      <Layout bgColor="black" height={'100px'} padding={'0'}>
         <Footer />
       </Layout>
     </>

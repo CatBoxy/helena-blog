@@ -2,15 +2,16 @@ import styled from 'styled-components';
 
 type LayoutStyledProps = {
   bgColor?: string;
-  footer?: boolean;
+  height?: string;
   body?: boolean;
+  padding?: string;
 };
 
 export const MainWrapper = styled.div<LayoutStyledProps>`
-  min-height: ${(props) => (props.footer ? '100px' : '100vh')};
+  min-height: ${(props) => (props.height || '100vh')};
   border-radius: ${(props) => (props.body ? '27px 27px 0 0' : '0')};
   width: 100%;
-  padding: ${(props) => (props.footer ? '0' : '0 21px')};
+  padding: ${(props) => (props.padding || '0 21px')};
   background-color: ${(props) => {
     switch (props.bgColor) {
       case 'white':
