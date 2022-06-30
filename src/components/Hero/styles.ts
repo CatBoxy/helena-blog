@@ -16,6 +16,11 @@ export const Container = styled.div`
     font-size: 40px;
   }
 
+  .banner {
+    width: '280px';
+    height: '390px';
+  }
+
   .btnContainer {
   }
 `;
