@@ -21,7 +21,17 @@ export const Container = styled.div`
     }
 
     ul {
+        color: #B2B2B2;
         display: flex;
         flex-direction: row;
+    }
+
+    li {
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    li:hover {
+        color: ${(props) => (props.theme.colors.primary)};
     }
 `

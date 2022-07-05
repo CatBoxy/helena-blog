@@ -19,16 +19,26 @@ const Header = () => {
             <DrawerBody>
               <NavBar>
                 <ul>
-                  <li className={location.pathname === '/' ? 'active' : ''}><Link to={'/'}>Home</Link></li>
-                  <li className={location.pathname === '/libros' ? 'active' : ''}><Link to={'/libros'}>Libros</Link></li>
-                  <li><Link to={'/'}>Sobre mi</Link></li>
-                  <li><Link to={'/'}>Contacto</Link></li>
-                  <li><Link to={'/'}>Galeria</Link></li>
+                  <li className={location.pathname === '/' ? 'active' : ''}>
+                    <Link to={'/'}>Home</Link>
+                  </li>
+                  <li className={location.pathname === '/libros' ? 'active' : ''}>
+                    <Link to={'/libros'}>Libros</Link>
+                  </li>
+                  <li className={location.pathname === '/sobre-mi' ? 'active' : ''}>
+                    <Link to={'/sobre-mi'}>Sobre mi</Link>
+                  </li>
+                  <li className={location.pathname === '/contacto' ? 'active' : ''}>
+                    <Link to={'/contacto'}>Contacto</Link>
+                  </li>
+                  <li className={location.pathname === '/galeria' ? 'active' : ''}>
+                    <Link to={'/galeria'}>Galeria</Link>
+                  </li>
                 </ul>
               </NavBar>
             </DrawerBody>
           </DrawerContent>
-      </Drawer>
+        </Drawer>
       </MainHeader>
     </>
   );

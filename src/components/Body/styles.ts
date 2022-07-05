@@ -12,7 +12,7 @@ export const Container = styled.div`
 `;
 
 export const Quote = styled.div`
-  background-color: #D9D9D9;
+  background-color: ${(props) => (props.theme.colors.tertiary)};
   padding: 36px;
   border-radius: 22px;
   text-align: justify;

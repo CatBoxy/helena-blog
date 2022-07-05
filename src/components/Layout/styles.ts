@@ -9,7 +9,7 @@ type LayoutStyledProps = {
 
 export const MainWrapper = styled.div<LayoutStyledProps>`
   min-height: ${(props) => (props.height || '100vh')};
-  border-radius: ${(props) => (props.body ? '27px 27px 0 0' : '0')};
+  border-radius: '0';
   width: 100%;
   padding: ${(props) => (props.padding || '0 21px')};
   background-color: ${(props) => {

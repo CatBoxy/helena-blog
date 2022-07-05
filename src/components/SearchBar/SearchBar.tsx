@@ -7,7 +7,7 @@ const SearchBar = () => {
         <>
             <Container>
                 <h2>Libros</h2>
-                <InputGroup style={{background: 'white', borderRadius: '0.375rem'}}>
+                <InputGroup style={{background: 'white', borderRadius: '3px'}}>
                     <Input placeholder='Buscar...' />
                     <InputRightElement children={<IoSearchSharp />} />
                 </InputGroup>
