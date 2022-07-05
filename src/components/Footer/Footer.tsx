@@ -1,23 +1,30 @@
-import { Container} from './styles';
-import { TbMail } from "react-icons/tb";
-import { FiFacebook } from "react-icons/fi";
+import { Container } from './styles';
+import { IconMail, IconBrandFacebook } from '@tabler/icons';
 import paisajeFooter from '../../assets/img/paisajeFooter.svg';
+import firma from '../../assets/img/firma.png';
+import { useLocation } from 'react-router-dom';
 
 const Footer = () => {
+  const location = useLocation();
   return (
     <>
       <Container>
-        <h2>
-          Helena Escales
-        </h2>
-        <ul>
-          <li><TbMail/></li>
-          <li><FiFacebook/></li>
-          <li>Etc</li>
-        </ul>
-        <div className='landscape'>
-          <img src={paisajeFooter} alt="paisaje" />
+        <div className="signature">
+          <img src={firma} alt="" />
         </div>
+        <ul className={location.pathname !== '/' ? 'navFooter' : ''}>
+          <li>
+            <IconMail stroke={1} />
+          </li>
+          <li>
+            <IconBrandFacebook stroke={1} />
+          </li>
+        </ul>
+        {location.pathname === '/' && (
+          <div className="landscape">
+            <img src={paisajeFooter} alt="paisaje" />
+          </div>
+        )}
       </Container>
     </>
   );

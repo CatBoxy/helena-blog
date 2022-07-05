@@ -1,5 +1,5 @@
 import { Container } from './styles';
-import { IoIosArrowDown } from 'react-icons/io';
+import { IconChevronDown } from '@tabler/icons';
 import bannerPicture from '../../assets/img/pintura1.png';
 
 const Hero = () => {
@@ -7,12 +7,12 @@ const Hero = () => {
     <>
       <Container>
         <h1 className="title">Helena Escales</h1>
-        <div className='banner'>
+        <div className="banner">
           <img src={bannerPicture} alt="pintura" />
         </div>
         <div className="btnContainer">
           <button className="scrollBtn">
-            <IoIosArrowDown />
+            <IconChevronDown />
           </button>
         </div>
       </Container>

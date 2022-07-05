@@ -29,6 +29,7 @@ const globalStyle = createGlobalStyle`
   ul {
     list-style-type: none;
   }
+
 `;
 
 export default globalStyle;
