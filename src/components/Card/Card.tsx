@@ -1,14 +1,17 @@
 import { Container, CoverWrapper, DetailsWrapper } from './styles';
-import camino from '../../assets/img/camino.jpg';
 import { Link } from 'react-router-dom';
 
-const Card = () => {
+interface CardProps {
+  img: string;
+}
+
+const Card: React.FC<CardProps> = ({ img }) => {
   return (
     <>
       <Container>
         <CoverWrapper>
           <Link to={'/book'}>
-            <img src={camino} alt="camino" />
+            <img src={img} alt="camino" />
           </Link>
         </CoverWrapper>
         <DetailsWrapper>
