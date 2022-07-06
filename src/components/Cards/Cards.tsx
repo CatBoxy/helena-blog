@@ -1,14 +1,14 @@
 import Card from '../Card/Card';
 import { Container } from './styles';
-import somos from '../../assets/img/Somos.jpg';
-import historiasRecetadas from '../../assets/img/historiasRecetadas.jpg';
+import books from '../../data/books.json';
 
 const Cards = () => {
   return (
     <>
       <Container>
-        <Card img={somos} />
-        <Card img={historiasRecetadas} />
+        {books.map((book) => (
+          <Card book={book} />
+        ))}
       </Container>
     </>
   );

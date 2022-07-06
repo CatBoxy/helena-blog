@@ -1,25 +1,30 @@
 import { Container, CoverWrapper, DetailsWrapper } from './styles';
 import { Link } from 'react-router-dom';
 
-interface CardProps {
-  img: string;
+interface Book {
+  id: string;
+  image: string;
+  text: string;
+  title: string;
 }
 
-const Card: React.FC<CardProps> = ({ img }) => {
+interface CardProps {
+  book: Book;
+}
+
+const Card: React.FC<CardProps> = ({ book }: CardProps) => {
+  const imgUrl = '../../src/assets/img/' + book.image;
   return (
     <>
       <Container>
         <CoverWrapper>
           <Link to={'/book'}>
-            <img src={img} alt="camino" />
+            <img src={imgUrl} alt="" />
           </Link>
         </CoverWrapper>
         <DetailsWrapper>
-          <h2>Titulo</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
-            labore corporis ea veritatis...
-          </p>
+          <h2>{book.title}</h2>
+          <p>{book.text}</p>
         </DetailsWrapper>
       </Container>
     </>
