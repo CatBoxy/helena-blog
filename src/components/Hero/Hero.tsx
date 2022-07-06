@@ -1,6 +1,6 @@
 import { Container } from './styles';
 import { IconChevronDown } from '@tabler/icons';
-import bannerPicture from '../../assets/img/pintura1.png';
+import bannerPicture from '../../assets/img/pintura1.jpg';
 
 const Hero = () => {
   return (
