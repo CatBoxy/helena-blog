@@ -7,7 +7,7 @@ const Cards = () => {
     <>
       <Container>
         {books.map((book) => (
-          <Card book={book} />
+          <Card book={book} key={book.id}/>
         ))}
       </Container>
     </>
