@@ -3,12 +3,12 @@
     "id": "1",
     "title": "Somos",
     "text": "Un texto sobre Somos",
-    "image": "/assets/img/Somos.jpg"
+    "image": "/Somos.jpg"
   },
   {
     "id": "2",
     "title": "Historias Recetadas",
     "text": "Un texto sobre Historias recetadas",
-    "image": "/assets/img/historiasRecetadas.jpg"
+    "image": "/historiasRecetadas.jpg"
   }
 ]
