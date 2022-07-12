@@ -12,7 +12,7 @@ export default extendTheme({
     error: '#BE5845',
   },
   fonts: {
-    body: 'Rubik',
+    body: 'Libre Baskerville',
   },
   styles: {
     global: {
