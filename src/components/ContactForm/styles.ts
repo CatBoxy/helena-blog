@@ -19,18 +19,10 @@ export const Container = styled.div`
         width: 100%;
     }
 
-    input {
+    input, textarea {
         padding: .5rem;
-        /* background-color: #F9D4C7; */
-        border: 2px solid #F19D7E;
+        border: 2px solid ${(props) => (props.theme.colors.primary)};
         border-radius: 3px;
-    }
-
-    textarea {
-        padding: .5rem;
-        /* background-color: #F9D4C7; */
-        border: 2px solid #F19D7E;
-        border-radius: 3px;    
     }
 
     button {
