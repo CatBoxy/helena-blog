@@ -1,20 +1,44 @@
 import { Container } from './styles';
 import camino from '../../assets/img/camino.jpg';
 import { Link } from 'react-router-dom';
+import { useParams } from "react-router-dom";
+import books from '../../data/books.json';
+import { useEffect, useState } from 'react';
+
+interface Book {
+  id: string;
+  image: string;
+  text: string;
+  title: string;
+}
 
 const BookBody = () => {
+  const [currentBook, setCurrentBook ] = useState<Book | undefined>(undefined);
+  let params = useParams();
+
+  useEffect(() => {
+
+    let filteredBook = books.find((book) => {
+      if (book.id === params.libroId) {
+        return book;
+      };
+      return 
+    });
+    setCurrentBook(filteredBook);
+
+  }, []);
+  console.log(currentBook);
+
+
   return (
     <>
       <Container>
-        <h2>Libro</h2>
+        <h2>{currentBook?.title}</h2>
         <div>
-          <img src={camino} alt="camino" />
+          <img src={currentBook?.image} alt="camino" />
         </div>
         <article>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-          ratione corporis sequi dicta culpa voluptatem aspernatur incidunt
-          deleniti mollitia, eius magni alias voluptate enim id, facilis sed
-          dolorem! Nulla, asperiores.
+          {currentBook?.text}
         </article>
         <div>
           <button>

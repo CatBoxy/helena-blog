@@ -13,13 +13,13 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ book }: CardProps) => {
+  const url = '/libros/' + book.id;
 
-  // const imgUrl = '../../src/assets/img/' + book.image;
   return (
     <>
       <Container>
         <CoverWrapper>
-          <Link to={'/book'}>
+          <Link to={url}>
             <img src={book.image} alt="" />
           </Link>
         </CoverWrapper>

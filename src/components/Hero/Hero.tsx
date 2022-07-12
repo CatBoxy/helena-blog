@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <>
       <Container>
-        <h1 className="title">Helena Escales</h1>
+        <h1 className="title">Helena Escales Lonné</h1>
         <div className="banner">
           <img src={bannerPicture} alt="pintura" />
         </div>

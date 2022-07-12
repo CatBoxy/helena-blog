@@ -16,7 +16,7 @@ const Navigation = () => {
         <Route path="/sobre-mi" element={<About />} />
         <Route path="/contacto" element={<Contact />} />
         <Route path="/galeria" element={<Gallery />} />
-        <Route path="/book" element={<Book />} />
+        <Route path="/libros/:libroId" element={<Book />} />
       </Routes>
     </>
   );
