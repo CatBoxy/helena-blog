@@ -1,4 +1,4 @@
-import Body from '../../Body/Body';
+import AboutBody from '../../AboutBody/AboutBody';
 import Footer from '../../Footer/Footer';
 import Header from '../../Header/Header';
 import Layout from '../../Layout/Layout';
@@ -10,7 +10,7 @@ const About = () => {
         <Header title={'Sobre mi'} />
       </Layout>
       <Layout bgColor="white" body={true}>
-        <Body />
+        <AboutBody />
       </Layout>
       <Layout bgColor="black" height={'100px'} padding={'0'}>
         <Footer />

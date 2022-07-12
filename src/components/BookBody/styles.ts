@@ -28,4 +28,9 @@ export const Container = styled.div`
     button:active {
         background-color: #F19D7E;
     }
+
+    img {
+        border-radius: 3px;
+        box-shadow: 0px 6px 12px rgb(0 0 0 / 30%);
+    }
 `;
