@@ -12,7 +12,7 @@ interface CardProps {
   book: Book;
 }
 
-const Card: React.FC<CardProps> = ({ book }: CardProps) => {
+const Card: React.FC<CardProps> = ({ book }) => {
   const url = '/libros/' + book.id;
 
   return (

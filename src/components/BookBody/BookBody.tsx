@@ -1,8 +1,5 @@
 import { Container } from './styles';
 import { Link } from 'react-router-dom';
-import { useParams } from "react-router-dom";
-import books from '../../data/books.json';
-import { useEffect, useState } from 'react';
 
 interface Book {
   id: string;
@@ -11,26 +8,15 @@ interface Book {
   title: string;
 }
 
-const BookBody = () => {
-  const [currentBook, setCurrentBook ] = useState<Book | undefined>(undefined);
-  let params = useParams();
+interface BookBodyProps {
+  currentBook: Book;
+}
 
-  useEffect(() => {
-
-    let filteredBook = books.find((book) => {
-      if (book.id === params.libroId) {
-        return book;
-      };
-      return 
-    });
-    setCurrentBook(filteredBook);
-
-  }, []);
-
+const BookBody = ({currentBook}: BookBodyProps) => {
+  
   return (
     <>
       <Container>
-        <h2>{currentBook?.title}</h2>
         <div>
           <img src={currentBook?.image} alt="camino" />
         </div>
@@ -38,9 +24,11 @@ const BookBody = () => {
           {currentBook?.text}
         </article>
         <div>
-          <button>
-            <Link to={'/libros'}>Volver</Link>
-          </button>
+          <Link to={'/libros'}>
+            <button>
+              Volver
+            </button>
+          </Link>
         </div>
       </Container>
     </>
