@@ -1,5 +1,4 @@
 import { Container } from './styles';
-import camino from '../../assets/img/camino.jpg';
 import { Link } from 'react-router-dom';
 import { useParams } from "react-router-dom";
 import books from '../../data/books.json';
@@ -27,8 +26,6 @@ const BookBody = () => {
     setCurrentBook(filteredBook);
 
   }, []);
-  console.log(currentBook);
-
 
   return (
     <>
