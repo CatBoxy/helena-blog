@@ -1,0 +1,140 @@
+[
+    {
+      "id": "1",
+      "title": "pintura",
+      "text": "Un texto sobre De palabras somos",
+      "image": "/pintura.jpg"
+    },
+    {
+      "id": "2",
+      "title": "pintura1",
+      "text": "Un texto sobre Historias recetadas",
+      "image": "/pintura1.jpg"
+    },
+    {
+      "id": "3",
+      "title": "pintura3",
+      "text": "Un texto sobre De palabras somos",
+      "image": "/pintura3.jpg"
+    },
+    {
+      "id": "4",
+      "title": "serie",
+      "text": "Un texto sobre Historias recetadas",
+      "image": "/serie.jpg"
+    },
+    {
+      "id": "5",
+      "title": "serie1",
+      "text": "Un texto sobre De palabras somos",
+      "image": "/serie1.jpg"
+    },
+    {
+      "id": "6",
+      "title": "serie2",
+      "text": "Un texto sobre Historias recetadas",
+      "image": "/serie2.jpg"
+    },
+    {
+      "id": "7",
+      "title": "serie3",
+      "text": "Un texto sobre De palabras somos",
+      "image": "/serie3.jpg"
+    },
+    {
+      "id": "8",
+      "title": "tintachina1",
+      "text": "Un texto sobre Historias recetadas",
+      "image": "/tintachina1.png"
+    },
+    {
+      "id": "9",
+      "title": "tintachina2",
+      "text": "Un texto sobre De palabras somos",
+      "image": "/tintachina2.png"
+    },
+    {
+      "id": "10",
+      "title": "tintachina3",
+      "text": "Un texto sobre Historias recetadas",
+      "image": "/tintachina3.png"
+    },
+    {
+      "id": "11",
+      "title": "tintachina4",
+      "text": "Un texto sobre De palabras somos",
+      "image": "/tintachina4.png"
+    },
+    {
+      "id": "12",
+      "title": "tintachina5",
+      "text": "Un texto sobre Historias recetadas",
+      "image": "/tintachina5.png"
+    },
+    {
+      "id": "13",
+      "title": "De palabras somos",
+      "text": "Un texto sobre De palabras somos",
+      "image": "/Somos.jpg"
+    },
+    {
+      "id": "14",
+      "title": "sos",
+      "text": "Un texto sobre Historias recetadas",
+      "image": "/sos.png"
+    },
+    {
+      "id": "15",
+      "title": "plants",
+      "text": "Un texto sobre De palabras somos",
+      "image": "/plants.png"
+    },
+    {
+      "id": "16",
+      "title": "dibujo",
+      "text": "Un texto sobre Historias recetadas",
+      "image": "/dibujo.jpg"
+    },
+    {
+      "id": "17",
+      "title": "hojas",
+      "text": "Un texto sobre De palabras somos",
+      "image": "/hojas.jpg"
+    },
+    {
+      "id": "18",
+      "title": "paisaje",
+      "text": "Un texto sobre Historias recetadas",
+      "image": "/paisaje.jpg"
+    },
+    {
+      "id": "19",
+      "title": "moderno",
+      "text": "Un texto sobre De palabras somos",
+      "image": "/moderno.png"
+    },
+    {
+      "id": "20",
+      "title": "camino",
+      "text": "Un texto sobre Historias recetadas",
+      "image": "/camino.jpg"
+    },
+    {
+      "id": "21",
+      "title": "blanconegro",
+      "text": "Un texto sobre De palabras somos",
+      "image": "/blanconegro.jpg"
+    },
+    {
+      "id": "22",
+      "title": "collar",
+      "text": "Un texto sobre Historias recetadas",
+      "image": "/collar.png"
+    },
+    {
+      "id": "23",
+      "title": "collar2",
+      "text": "Un texto sobre Historias recetadas",
+      "image": "/collar2.png"
+    }
+  ]

@@ -6,12 +6,13 @@ interface LayoutProps {
   height?: string;
   body?: boolean;
   padding?: string;
+  bgImg?: string;
   children: ReactNode;
 }
 
-const Layout: React.FC<LayoutProps> = ({ body, height, bgColor, children, padding }) => {
+const Layout: React.FC<LayoutProps> = ({ body, height, bgColor, children, padding, bgImg }) => {
   return (
-    <MainWrapper bgColor={bgColor} height={height} body={body} padding={padding}>
+    <MainWrapper bgColor={bgColor} height={height} body={body} padding={padding} bgImg={bgImg}>
       {children}
     </MainWrapper>
   );

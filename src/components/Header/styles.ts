@@ -6,9 +6,13 @@ export const MainHeader = styled.header`
   justify-content: flex-end;
   justify-content: space-between;
   align-items: center;
+  min-height: 80px;
+  position: relative;
+  z-index: 5;
+  color: black;
 
   h2 {
-    font-size: 2em;
+    font-size: 1.2em;
     font-weight: 600;
   }
 `;

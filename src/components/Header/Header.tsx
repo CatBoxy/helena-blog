@@ -17,12 +17,13 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ title }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const location = useLocation();
+  const titleMayus = title?.toUpperCase();
 
   return (
     <>
       <MainHeader>
-        <h2>{title}</h2>
-        <IconMenu2 onClick={onOpen} />
+        <h2>{titleMayus}</h2>
+        <IconMenu2 onClick={onOpen} color={location.pathname === '/' ? 'white' : 'black'} stroke={2}/>
         <Drawer
           placement={'top'}
           onClose={onClose}
