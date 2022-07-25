@@ -6,7 +6,7 @@ import Layout from '../../Layout/Layout';
 const Contact = () => {
   return (
     <>
-      <Layout height={'inherit'}>
+      <Layout height={'inherit'} bgColor="black">
         <Header title={'Contacto'} />
       </Layout>
       <Layout bgColor="white" body={true}>

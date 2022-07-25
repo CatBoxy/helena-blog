@@ -6,7 +6,7 @@ import Layout from '../../Layout/Layout';
 const About = () => {
   return (
     <>
-      <Layout height={'inherit'}>
+      <Layout height={'inherit'} bgColor="black">
         <Header title={'Sobre mi'} />
       </Layout>
       <Layout bgColor="white" body={true}>

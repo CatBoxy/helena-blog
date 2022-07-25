@@ -1,13 +1,34 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 100%;
     display: flex;
     gap: 24px;
+
+    @media (max-width: 950px) {
+        width: 100%;
+    }
+
+    @media (min-width: 950px) {
+        flex-direction: column;
+    }
 `;
 
 export const CoverWrapper = styled.div`
-    width: 50%;
+    @media (max-width: 950px) {
+        width: 50%;
+    }
+    @media (min-width: 950px) {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        max-height: 420px;
+        min-height: 420px;
+
+        img {
+            max-height: 420px;
+            max-width: 300px;
+        }
+    }
 
     img {
         border-radius: 3px;
@@ -23,8 +44,13 @@ export const CoverWrapper = styled.div`
 `;
 
 export const DetailsWrapper = styled.div`
-    width: 50%;
+    @media (max-width: 950px) {
+        width: 50%;
+    }
 
+    @media (min-width: 950px) {
+        width: inherit;
+    }
     h2 {
         font-weight: bold;
         margin-bottom: 10px;

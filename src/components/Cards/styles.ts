@@ -5,4 +5,12 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    @media (min-width: 950px) {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 960px;
+        margin: auto;
+    }
 `;

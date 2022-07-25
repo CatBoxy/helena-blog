@@ -31,7 +31,7 @@ const Book = () => {
 
     return (
         <>
-            <Layout height={'48px'}>
+            <Layout height={'48px'} bgColor="black">
               <Header title={currentBook?.title}/>
             </Layout>
             <Layout bgColor="white" body={true}>

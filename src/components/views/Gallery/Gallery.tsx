@@ -6,7 +6,7 @@ import Layout from '../../Layout/Layout';
 const Gallery = () => {
   return (
     <>
-      <Layout height={'inherit'}>
+      <Layout height={'inherit'} bgColor="black">
         <Header title={'Galeria'} />
       </Layout>
       <Layout bgColor="white" body={true}>

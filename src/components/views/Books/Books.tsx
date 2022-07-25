@@ -6,7 +6,7 @@ import Footer from '../../Footer/Footer';
 const Books = () => {
   return (
     <>
-      <Layout height={'inherit'}>
+      <Layout height={'inherit'} bgColor="black">
         <Header title="Libros" />
       </Layout>
       <Layout bgColor="white" body={true}>
